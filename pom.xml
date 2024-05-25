@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Core information -->
+    <groupId>io.github.sachithariyathilaka</groupId>
+    <artifactId>java-date-time-tutorial</artifactId>
+    <version>1.0.0</version>
+
+    <!-- Packaging information -->
+    <packaging>jar</packaging>
+
+    <!-- Project information -->
+    <name>Java Date Time API Tutorial</name>
+    <description>Java Maven tutorial project</description>
+    <url>https://github.com/sachithariyathilaka/java-date-time-api-tutorial</url>
+    <inceptionYear>2024</inceptionYear>
+
+    <!-- License information -->
+    <licenses>
+
+        <license>
+            <name>MIT Licence</name>
+        </license>
+
+    </licenses>
+
+    <!-- Organization information -->
+    <organization>
+        <name>ByteGen Technologies</name>
+        <url>https://github.com/sachithariyathilaka</url>
+    </organization>
+
+    <!-- Developer information -->
+    <developers>
+
+        <developer>
+            <id>1</id>
+            <name>Sachith Ariyathilaka</name>
+            <organization>ByteGen Technologies</organization>
+            <organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
+            <email>sachith.vidu@yahoo.com</email>
+            <roles>
+                <role>Chairman</role>
+            </roles>
+            <timezone>UTC +5:30</timezone>
+        </developer>
+
+    </developers>
+
+    <!-- Property information -->
+    <properties>
+
+        <!-- Project properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>8</java.version>
+
+    </properties>
+
+    <!-- Profile information -->
+    <profiles>
+
+        <profile>
+            <id>tutorial</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+    </profiles>
+
+    <!-- Repository information -->
+    <repositories>
+
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+    </repositories>
+
+    <!-- Plugin repository information -->
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+
+    </pluginRepositories>
+
+    <!-- Build information -->
+    <build>
+
+        <!-- General information -->
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <!-- Plugin information -->
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <!-- SCM information -->
+    <scm>
+        <url>https://github.com/sachithariyathilaka/java-date-time-api-tutorial</url>
+        <connection>scm:git:https://github.com/sachithariyathilaka/java-date-time-api-tutorial.git</connection>
+        <developerConnection>scm:git:git@github.com:sachithariyathilaka/java-date-time-api-tutorial.git</developerConnection>
+    </scm>
+
+    <!-- Reporting information -->
+    <reporting>
+        <outputDirectory>${project.build.directory}/site</outputDirectory>
+    </reporting>
+
+</project>
